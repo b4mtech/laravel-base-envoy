@@ -2,9 +2,9 @@
 
 namespace B4mtech\LaravelBaseEnvoy\Tests;
 
+use B4mtech\LaravelBaseEnvoy\LaravelBaseEnvoyServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use B4mtech\LaravelBaseEnvoy\LaravelBaseEnvoyServiceProvider;
 
 class TestCase extends Orchestra
 {

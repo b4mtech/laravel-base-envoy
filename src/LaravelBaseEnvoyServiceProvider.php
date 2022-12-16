@@ -2,9 +2,9 @@
 
 namespace B4mtech\LaravelBaseEnvoy;
 
+use B4mtech\LaravelBaseEnvoy\Commands\LaravelBaseEnvoyCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use B4mtech\LaravelBaseEnvoy\Commands\LaravelBaseEnvoyCommand;
 
 class LaravelBaseEnvoyServiceProvider extends PackageServiceProvider
 {
