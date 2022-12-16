@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton;
+namespace B4mtech\LaravelBaseEnvoy;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use VendorName\Skeleton\Commands\SkeletonCommand;
+use B4mtech\LaravelBaseEnvoy\Commands\LaravelBaseEnvoyCommand;
 
-class SkeletonServiceProvider extends PackageServiceProvider
+class LaravelBaseEnvoyServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -16,10 +16,10 @@ class SkeletonServiceProvider extends PackageServiceProvider
          * More info: https://github.com/spatie/laravel-package-tools
          */
         $package
-            ->name('skeleton')
+            ->name('laravel-base-envoy')
             ->hasConfigFile()
             ->hasViews()
-            ->hasMigration('create_skeleton_table')
-            ->hasCommand(SkeletonCommand::class);
+            ->hasMigration('create_laravel-base-envoy_table')
+            ->hasCommand(LaravelBaseEnvoyCommand::class);
     }
 }

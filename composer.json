@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "b4mtech/laravel-base-envoy",
+    "description": "A base configuration to import into an Envoy.blade.php file for deploying with laravel",
     "keywords": [
-        ":vendor_name",
+        "b4mtech",
         "laravel",
-        ":package_slug"
+        "laravel-base-envoy"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/b4mtech/laravel-base-envoy",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Mark Myers",
+            "email": "marcusmyers@gmail.com",
             "role": "Developer"
         }
     ],
@@ -30,18 +30,17 @@
         "phpstan/extension-installer": "^1.1",
         "phpstan/phpstan-deprecation-rules": "^1.0",
         "phpstan/phpstan-phpunit": "^1.0",
-        "phpunit/phpunit": "^9.5",
-        "spatie/laravel-ray": "^1.26"
+        "phpunit/phpunit": "^9.5"
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "B4mtech\\LaravelBaseEnvoy\\": "src",
+            "B4mtech\\LaravelBaseEnvoy\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "B4mtech\\LaravelBaseEnvoy\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -61,10 +60,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "B4mtech\\LaravelBaseEnvoy\\LaravelBaseEnvoyServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "LaravelBaseEnvoy": "B4mtech\\LaravelBaseEnvoy\\Facades\\LaravelBaseEnvoy"
             }
         }
     },

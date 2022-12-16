@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace B4mtech\LaravelBaseEnvoy\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class LaravelBaseEnvoyCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'laravel-base-envoy';
 
     public $description = 'My command';
 
